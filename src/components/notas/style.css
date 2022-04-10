@@ -1,0 +1,109 @@
+.container__notas{
+  background-color: hsl(235, 24%, 19%);
+  width: 480px;
+  height: 319px;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+.container__notas::-webkit-scrollbar{
+  background-color: aqua;
+  width: 10px;
+}
+
+.container__notas::-webkit-scrollbar-track {
+  background-color: hsl(240, 14%, 24%);
+}
+
+.container__notas::-webkit-scrollbar-thumb {
+  background: #1d1c1c;
+  border-radius: 10px;
+}
+
+.notaConcluida{
+  text-decoration: line-through;
+  color: hsl(234, 11%, 52%);
+}
+
+.icone__fechar{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 18px;
+}
+
+.icone__fechar-desabilitado{
+  display: none;
+}
+
+.nota__digitada{
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: hsl(236, 33%, 92%);
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+  padding: 1rem;
+}
+
+p{
+  cursor: pointer;
+  font-size: 15px
+}
+
+p:hover{
+  color: hsl(240, 6%, 69%);
+}
+
+.bola__checada {
+  height: 20px;
+  background-color: hsl(235, 24%, 19%);
+  position: relative;
+  width: 20px;
+  border: 1px solid hsl(237, 14%, 26%);
+  left: 0;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.icone__checado{
+  height: 10px;
+  top: 4px;
+  position: absolute;
+  left: 2px;
+}
+
+.barra-de-acoes{
+  display: flex;
+  justify-content: space-around;
+  width: 480px;
+  padding: 1rem;
+  background-color: hsl(235, 24%, 19%);
+  color:hsl(234, 11%, 52%);
+  font-size: 13px;
+}
+
+.acoes{
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.barra__acoes{
+  display: flex;
+}
+
+
+@media screen and (max-width: 508px) {
+  .container__notas{
+    width: 350px;
+  }
+
+  .barra-de-acoes{
+    width: 350px;
+  }
+
+  .acoes{
+    margin-left: 5px;
+  }
+
+}

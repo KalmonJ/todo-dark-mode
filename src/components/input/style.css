@@ -1,0 +1,33 @@
+.input__criar-nota{
+  width: 480px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color:hsl(235, 24%, 19%);
+  color:hsl(234, 39%, 85%);
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.input__criar-nota::placeholder{
+  color: hsl(236, 9%, 61%);
+}
+
+.container__logo{
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 508px) {
+  .input__criar-nota{
+    width: 350px;
+  }
+
+  .container__logo{
+    width: 350px;
+  }
+
+}
